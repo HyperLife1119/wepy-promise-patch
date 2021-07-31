@@ -1,0 +1,29 @@
+{
+  "name": "wepy-promise-patch",
+  "version": "1.0.0",
+  "description": "wepy promise support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyperLife1119/wepy-promise-patch.git"
+  },
+  "keywords": [
+    "wepy",
+    "promise",
+    "await",
+    "async"
+  ],
+  "author": "HyperLife1119",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HyperLife1119/wepy-promise-patch/issues"
+  },
+  "homepage": "https://github.com/HyperLife1119/wepy-promise-patch#readme",
+  "dependencies": {
+    "promise-polyfill": "^8.2.0",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
