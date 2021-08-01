@@ -1,6 +1,6 @@
 {
   "name": "wepy-promise-patch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wepy promise support",
   "main": "index.js",
   "scripts": {
