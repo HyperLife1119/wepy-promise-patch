@@ -1,12 +1,16 @@
 var g = require('./global');
 
 if (g) {
-  if (!g.Promise) {
-    g.Promise = require('promise-polyfill');
-  }
+  if (g.Promise) {
+    if (!g.Promise.prototype.finally) {
+      g.Promise.prototype.finally = require('promise-polyfill').prototype.finally;
+    }
 
-  if (!g.Promise.prototype.finally) {
-    g.Promise.prototype.finally = require('promise-polyfill').prototype.finally;
+    if (!g.Promise.allSettled) {
+      g.Promise.allSettled = require('promise-polyfill').allSettled;
+    }
+  } else {
+    g.Promise = require('promise-polyfill');
   }
 
   if (!g.regeneratorRuntime) {
